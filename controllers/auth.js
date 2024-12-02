@@ -24,7 +24,7 @@ const registerUser = async(req,res) => {
     }
     catch(e){
         req.flash('errorMsg', e.message);
-        return res.redirect('/signup');
+        return res.redirect('/register');
     }
 }
 
